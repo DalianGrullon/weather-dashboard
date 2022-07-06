@@ -1,9 +1,24 @@
 :root {
-    --color-1: #4169d9;
-    --color-2: #17254d;
-    --color-3: #6a6f7a;
+  --color-1: #4169d9;
+  --color-2: #17254d;
+  --color-3: #b6b6b6;
 }
 
 header {
-    background-image: linear-gradient(to right, var(--color-1), var(--color-2));
+  background-image: linear-gradient(to right, var(--color-1), var(--color-2));
+}
+
+.custom-btn-primary {
+    background: var(--color-1);
+    color: white;
+}
+
+.custom-btn-primary:hover {
+    background: var(--color-2);
+    color: white;
+}
+
+.custom-btn-secondary {
+    background: var(--color-3);
+    color: black;
 }
