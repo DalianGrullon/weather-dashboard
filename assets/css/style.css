@@ -1,0 +1,9 @@
+:root {
+    --color-1: #4169d9;
+    --color-2: #17254d;
+    --color-3: #6a6f7a;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--color-1), var(--color-2));
+}
