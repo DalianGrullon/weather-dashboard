@@ -12,7 +12,7 @@ function searchHandle(e) {
 }
 
 function fetchLocation(search) {
-  let locationURL = `http://api.openweathermap.org/geo/1.0/direct?q=${search}&appid=${apiKey}`;
+  let locationURL = `https://api.openweathermap.org/geo/1.0/direct?q=${search}&appid=${apiKey}`;
   
   fetch(locationURL)
     .then(response => response.json())
@@ -87,7 +87,7 @@ function fetchWeather(locationObj) {
 
 function renderWeather(city, currentWeather, forecastWeather) {
   // render the weather
-  let iconSource = 'http://openweathermap.org/img/wn/';
+  let iconSource = 'https://openweathermap.org/img/wn/';
   let header = document.createElement('h2');
   let futureHeader = document.createElement('h2');
   let icon = document.createElement('img');
