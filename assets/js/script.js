@@ -158,15 +158,9 @@ function renderWeather(city, currentWeather, forecastWeather) {
   }
   
   let currentRender = {currentWeather, forecastWeather}
-  localStorage.setItem(city, JSON.stringify(currentRender));
-  pushButton(city);
-}
-
-function pushButton(currentCity) {
-  if (localStorage.getItem(currentCity) !== null) {
-    generateButton(currentCity);
-  } else {
-    return
+  if (localStorage.getItem(city) === null) {
+    localStorage.setItem(city, JSON.stringify(currentRender));
+    generateButton(city);
   }
 }
 
